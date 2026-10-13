@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
+import { Summary } from "./components/Summary";
 
 
 
@@ -28,13 +29,7 @@ function App() {
       {Navbar()}
 
       <div className="flex items-end justify-between bg-[#000000] px-20 py-12 text-[#EEEEEE]">
-        <header>
-          <h2 className="text-6xl font-bold">Build your plan</h2>
-          <p className="mt-4 text-3xl text-[#CB2957]">
-            Seats: {seats} | Months: {months}
-          </p>
-          <p className="mt-2 text-xl">Quote for FRANCIS JAKE BARRERA</p>
-        </header>
+        {Summary(seats, months)}
 
         <div className="flex gap-4">
           <button
@@ -106,6 +101,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
