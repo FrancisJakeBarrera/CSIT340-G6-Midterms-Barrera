@@ -27,7 +27,7 @@ export function PlanPicker(seats, months, handleAddSeat, handleAddMonth, handleR
           Add month
         </button>
         <button
-          className="cursor-pointer rounded-lg border-2 border-[#EEEEEE] px-8 py-3 text-xl font-bold"
+          className="cursor-pointer rounded-lg border-2 border-[#EEEEEF] px-8 py-3 text-xl font-bold"
           onClick={handleReset}
         >
           Reset
